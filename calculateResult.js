@@ -19,12 +19,11 @@ const verbalImg = verbal.querySelector('img')
 const verbalScore = document.getElementById('verbal-score')
 const verbalText = document.getElementById('verbal-text')
 
-const data = await fetch('./data.json')
+const data = await fetch('data.json')
 .then(res => res.json())
 .then(data => {
     return data
 })
-
 const reactionData = data[0]
 const memoryData = data[1]
 const verbalData = data[2]
