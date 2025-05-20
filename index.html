@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="font-hankenGrotesk min-h-screen bg-paleblue flex items-center justify-center">
+    <div class=" flex flex-col justify-evenly items-center text-center bg-white md:rounded-4xl md:w-[650px] md:flex-row">
+        <section class="rounded-b-4xl bg-gradient-to-b from-lightslateblue to-lightroyalblue py-6 px-12 md:w-[50%] md:rounded-t-4xl">
+          <h2 class="text-lightlavender font-medium text-lg">Your Result</h2>
+          <div class="bg-gradient-to-b from-violetblue from-10% via-violetblue/55 via-30% to-persianblue/55 to-90% rounded-full mx-auto my-6 w-44 p-11">
+            <p id="average" class="text-white font-extrabold text-6xl">96</p>
+            <p class="text-lightlavender">of 100</p>
+          </div>
+          <h3 class="text-white font-bold text-3xl">Great</h3>
+          <p class="text-lightlavender my-4">You scored higher than 65% of the people who have taken these tests.</p>
+        </section>
+        <section class=" bg-white py-6 w-full md:w-[50%] md:rounded-r-4xl">
+          <h2 class="text-lg font-bold text-left w-[85%] mx-auto">Summary</h2>
+          <div class="my-6 w-[85%] mx-auto">
+            <div id="reaction" class="flex justify-around items-center bg-lightred/10 py-2 rounded-lg my-5">
+              <div class="flex">
+                <img src="" alt="reaction-icon">
+                <p id="reaction-text" class="px-3 text-lightred"></p>
+              </div>
+              <div>
+                <p id="reaction-score" class="font-bold inline"> 0 </p>
+                <p class="text-darkgrayblue/50 inline" > / 100</p>
+              </div>
+            </div>
+            <div id="memory" class="flex justify-around items-center bg-orangeyyellow/10 py-2 rounded-lg my-5">
+              <div class="flex">
+                <img src="" alt="memory icon">
+                <p id="memory-text" class="px-3 text-orangeyyellow"></p>
+              </div>
+              <div>
+                <p id="memory-score" class="font-bold inline">0</p>
+                <p class="text-darkgrayblue/50 inline" > / 100</p>
+              </div>
+            </div>
+            <div id="verbal" class="flex justify-around items-center bg-greenteal/10 py-2 rounded-lg my-5">
+              <div class="flex">
+                <img src="" alt="verbal icon">
+                <p id="verbal-text" class="px-3 text-greenteal"></p>
+              </div>
+              <div>
+                <p id="verbal-score" class="font-bold inline"> 0 </p>              
+                <p class="text-darkgrayblue/50 inline"> / 100</p>
+              </div>
+            </div>
+            <div id="visual" class="flex justify-around items-center bg-cobaltblue/10 py-2 rounded-lg my-5">
+              <div class="flex">
+                <img src="" alt="visual icon">
+                <p id="visual-text" class="px-3 text-cobaltblue"></p>
+              </div>
+              <div>
+                <p id="visual-score" class="font-bold inline">0 </p>
+                <p class="text-darkgrayblue/50 inline"> / 100</p>
+              </div>
+            </div>
+          </div>
+          <button class="bg-darkgrayblue text-white w-[85%] rounded-4xl py-3  my-6 hover:bg-gradient-to-b from-lightslateblue to-lightroyalblue">Continue</button>
+        </section>
+    </div>
+  </main>
+  <script type="module" src="/calculateResult.js"></script>
+</body>
+</html>
