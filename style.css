@@ -1,1 +1,28 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+    --color-lightred: hsl(0, 100%, 67%);
+    --color-orangeyyellow: hsl(39, 100%, 56%);
+    --color-greenteal: hsl(166, 100%, 37%);
+    --color-cobaltblue: hsl(234, 85%, 45%);
+    /* Gradientsbackground */
+    --color-lightslateblue: hsl(252, 100%, 67%);
+    --color-lightroyalblue: hsl(241, 81%, 54%);
+    /* circle */
+    --color-persianblue: hsla(241, 72%, 46%, 0);
+    --color-violetblue: hsla(256, 72%, 46%, 1);
+
+    /* Neutral */
+    --color-white: hsl(0, 0%, 100%);
+    --color-paleblue: hsl(221, 100%, 96%);
+    --color-lightlavender: hsl(241, 100%, 89%);
+    --color-darkgrayblue: hsl(224, 30%, 27%);
+
+    --font-hankenGrotesk: "Hanken Grotesk", sans-serif
+
+  /* font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+}
